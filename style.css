@@ -1,0 +1,121 @@
+/* fontinput  */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* fontname ------------------------
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+/* utilits class */
+
+:root {
+    /* color  */
+    --pureColor: #fff;
+    --premaryColor: #FA804C;
+    --secondaryLightColor: #FFF9F4;
+    --lightColor: #F1F1F1;
+    --secondaryColor: #FABE4C;
+    --darkColor: #363958;
+    --paragraphColor: #3E3E3E;
+    --btnGredient: linear-gradient(180deg, #3D4FF3 0%, #3543BC 100%);
+    --btnHoverGredient: linear-gradient(180deg, #3042e4 0%, #2535c3 100%);
+    /* font */
+    --headingfont: 'Bebas Neue', cursive;
+    --bodyFont: 'Roboto', sans-serif;
+    /* size  */
+    --biggerFontSize: 3.5rem;
+    --bigFontSize: 2rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .838rem;
+    --smallerFontSize: .75rem;
+}
+
+body {
+    font-family: var(--bodyFont);
+}
+
+.container2 {
+    max-width: 1144px;
+    margin: auto;
+    width: 95%;
+}
+
+@media screen and (max-width:768px) {
+     :root {
+        --biggerFontSize: 2rem;
+        --bigFontSize: 1.3rem;
+        --h1FontSize: 1.7rem;
+        --h2FontSize: 1.3rem;
+        --h3FontSize: .9rem;
+        --normalFontSize: .8rem;
+        --smallFontSize: .875rem;
+        --smallerFontSize: .813rem;
+    }
+    .container2 {
+        width: 90%;
+    }
+}
+
+.hedding {
+    margin: 3rem 0;
+    font-family: var(--headingfont);
+}
+
+
+/* --------------------
+header --------------
+------------------------------
+ */
+
+header {
+    background-color: var(--secondaryLightColor);
+}
+
+header .home-contant button,
+.card-body button {
+    background-image: var(--btnGredient);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+header .home-contant button:hover {
+    background-image: var(--btnHoverGredient)
+}
+
+.home-contant .right-site h1 {
+    font-family: var(--headingfont);
+    font-size: var(--biggerFontSize);
+    line-height: 1.1;
+}
+
+.home-contant .right-site span:first-child {
+    color: var(--premaryColor);
+}
+
+.home-contant .right-site span:last-child {
+    color: var(--darkColor);
+}
+
+.home-contant .right-site a {
+    color: var(--paragraphColor);
+}
+
+@media (max-width:768px) {
+    .home-contant {
+        flex-direction: column-reverse;
+    }
+    .left-site {
+        width: 100%;
+    }
+    .right-site {
+        width: 100%;
+    }
+    .right-site img {
+        width: 75%;
+    }
+}
