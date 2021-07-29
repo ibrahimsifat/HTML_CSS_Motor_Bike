@@ -1,6 +1,6 @@
 /* fontinput  */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
 
 /* fontname ------------------------
 /* font-family: 'Bebas Neue', cursive;
@@ -12,17 +12,18 @@ font-family: 'Roboto', sans-serif; */
 :root {
     /* color  */
     --pureColor: #fff;
-    --premaryColor: #FA804C;
-    --secondaryLightColor: #FFF9F4;
+    --premaryColor: #E76F51;
+    --secondaryLightColor: #7E848C;
     --lightColor: #F1F1F1;
     --secondaryColor: #FABE4C;
-    --darkColor: #363958;
-    --paragraphColor: #3E3E3E;
+    --darkColor: #0B0D17;
+    --paragraphColor: #E0E0E0;
     --btnGredient: linear-gradient(180deg, #3D4FF3 0%, #3543BC 100%);
     --btnHoverGredient: linear-gradient(180deg, #3042e4 0%, #2535c3 100%);
     /* font */
-    --headingfont: 'Bebas Neue', cursive;
-    --bodyFont: 'Roboto', sans-serif;
+    --headingfont: 'Poppins', sans-serif;
+    --bodyFont: 'Poppins', sans-serif;
+    ;
     /* size  */
     --biggerFontSize: 3.5rem;
     --bigFontSize: 2rem;
@@ -38,12 +39,6 @@ body {
     font-family: var(--bodyFont);
 }
 
-.container2 {
-    max-width: 1144px;
-    margin: auto;
-    width: 95%;
-}
-
 @media screen and (max-width:768px) {
      :root {
         --biggerFontSize: 2rem;
@@ -55,14 +50,11 @@ body {
         --smallFontSize: .875rem;
         --smallerFontSize: .813rem;
     }
-    .container2 {
-        width: 90%;
-    }
 }
 
-.hedding {
-    margin: 3rem 0;
-    font-family: var(--headingfont);
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 
@@ -71,20 +63,50 @@ header --------------
 ------------------------------
  */
 
+nav ul li {
+    font-weight: 500;
+}
+
 header {
     background-color: var(--secondaryLightColor);
 }
 
-header .home-contant button,
-.card-body button {
-    background-image: var(--btnGredient);
-    outline: none;
-    border: none;
-    border-radius: 10px;
+header .left-site {
+    width: 40%;
 }
 
-header .home-contant button:hover {
-    background-image: var(--btnHoverGredient)
+header .left-site img {
+    width: 100%;
+}
+
+header .right-site {
+    width: 60%;
+    margin-right: 5%;
+}
+
+header button,
+main button {
+    background-color: var(--premaryColor) !important;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--premaryColor) !important;
+    transition: all .4s ease-in-out;
+}
+
+header button:hover {
+    background-color: transparent;
+    color: var(--darkColor);
+}
+
+main button:hover {
+    background-color: transparent !important;
+    color: var(--darkColor) !important;
+}
+
+header p {
+    color: var(--paragraphColor);
+    font-weight: lighter;
 }
 
 .home-contant .right-site h1 {
@@ -107,15 +129,345 @@ header .home-contant button:hover {
 
 @media (max-width:768px) {
     .home-contant {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
-    .left-site {
+    header .left-site {
+        width: 80%;
+        margin-top: 50px;
+    }
+    header .left-site img {
         width: 100%;
     }
-    .right-site {
+    header .right-site {
+        width: 90%;
+        margin-right: 0%;
+    }
+}
+
+
+/* --------------------
+feturebike section --------------
+------------------------------
+ */
+
+.feture {
+    margin: 80px auto;
+}
+
+.feture .heading h1 {
+    line-height: 10px;
+    font-weight: 600;
+}
+
+.feture .heading small {
+    position: relative;
+    font-size: 10px;
+    color: var(--premaryColor);
+    line-height: 1.1;
+}
+
+.feture .heading small::after {
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    width: 25%;
+    background-color: var(--premaryColor);
+    transition: all .5s ease;
+    position: absolute;
+    bottom: -4px;
+    left: 40%;
+    transform: translate(-50% 0);
+}
+
+.fetureBike-wapper {
+    flex-wrap: wrap;
+}
+
+.fetureBike-wapper .col img {
+    max-width: 250px;
+    min-width: 200px;
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+}
+
+.fetureBike-wapper .col img:hover {
+    filter: none;
+}
+
+
+/* --------------------
+news section --------------
+------------------------------
+ */
+
+.news .hedding h1 {
+    font-weight: 600;
+}
+
+.news .hedding h1 span {
+    color: var(--premaryColor);
+}
+
+.box-shadow {
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box-shadow>img {
+    width: 90%;
+    margin: 0 auto;
+    transition: all .4s ease-in-out;
+}
+
+.box-shadow>img:hover {
+    transform: scale(1.03);
+}
+
+
+/* --------------------
+Client section --------------
+------------------------------
+ */
+
+.client .heading h1 {
+    font-weight: 600;
+}
+
+.client .heading h1 span {
+    color: var(--premaryColor);
+}
+
+.client .card-body small {
+    color: turquoise;
+}
+
+.client .card-body .card-text {
+    color: var(--secondaryLightColor);
+    font-size: 14px;
+}
+
+.client .col .card {
+    border-radius: 10px;
+}
+
+.client .fa-star {
+    color: var(--premaryColor);
+    margin-right: 5px;
+}
+
+
+/* --------------------
+question-wapper --------------
+------------------------------
+ */
+
+
+/* .question-wapper {} */
+
+.question-wapper .left-site {
+    width: 35%;
+}
+
+.question-wapper .left-site img {
+    width: 100%;
+}
+
+.question-wapper .rightsite {
+    margin-left: auto;
+    width: 50%;
+}
+
+.question-wapper .btn:focus {
+    border: none;
+    outline: none;
+}
+
+.question-wapper .wapper .text {
+    border: none;
+    outline: none;
+}
+
+.question-wapper .collapse .card-body {
+    color: var(--secondaryLightColor);
+}
+
+@media (max-width:768px) {
+    .question-wapper {
+        flex-direction: column;
+    }
+    .question-wapper .left-site {
         width: 100%;
     }
-    .right-site img {
-        width: 75%;
+    .question-wapper .rightsite {
+        margin-left: 0;
+        width: 100%;
+    }
+    .heading {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* --------------------
+new bike collection --------------
+------------------------------
+ */
+
+.newbike img {
+    max-width: 400px;
+    min-width: 200px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.newbike .heading h1 {
+    font-weight: 600;
+}
+
+.newbike .heading h1 span {
+    color: var(--premaryColor);
+}
+
+.newbike .wapper .left img,
+.newbike .wapper .right img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newbike .wapper .left {
+    position: relative;
+}
+
+.newbike .wapper .right {
+    position: relative;
+}
+
+.newbike .wapper .left .title,
+.title2 {
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+    background-color: var(--pureColor);
+}
+
+.newbike .wapper .left:hover .title {
+    opacity: 1;
+    visibility: visible;
+}
+
+.newbike .wapper .right:hover .title2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width:768px) {
+    .newbike .wapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newbike .wapper img {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* --------------------
+.testimonials --------------
+------------------------------
+ */
+
+.testimonials {
+    flex-wrap: wrap;
+}
+
+.testimonials .right-site .text {
+    background-color: var(--pure);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.testimonials .right-site .text h5 {
+    color: var(--darkColor);
+    font-weight: 600;
+}
+
+.testimonials .right-site {
+    width: 50%;
+}
+
+.testimonials .left-site {
+    width: 50%;
+}
+
+.testimonials .left-site h1 {
+    font-weight: 600;
+}
+
+.testimonials .right-site .text p {
+    color: var(--secondaryLightColor);
+}
+
+@media (max-width:768px) {
+    .testimonials {
+        flex-direction: column;
+    }
+    .testimonials .right-site {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .testimonials .left-site {
+        width: 100%;
+    }
+}
+
+
+/* --------------------
+Footer wapper --------------
+------------------------------
+ */
+
+.foter {
+    font-weight: normal;
+    padding: 50px 0;
+    font-weight: lightier;
+    color: var(--pureColor);
+    background-color: var(--darkColor);
+}
+
+.foter .second a {
+    margin-right: 10px;
+    color: var(--pureColor);
+    text-decoration: none;
+    transition: .4s ease-in-out;
+}
+
+.foter .second a:hover {
+    color: var(--premaryColor);
+}
+
+.foter .second a:first-child {
+    padding: 0;
+}
+
+@media (max-width:768px) {
+    .foter .wapper {
+        flex-direction: column;
+    }
+    .foter .wapper .second {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .foter .second a {
+        margin-right: 0;
+    }
+    .foter .therd {
+        margin: 0 auto;
+        text-align: center;
     }
 }

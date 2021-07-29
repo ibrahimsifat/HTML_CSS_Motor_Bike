@@ -13,51 +13,433 @@
 </head>
 
 <body>
-    <header class="pb-5">
+    <header id="header" class="pb-5">
         <!-- navbar -->
-        <nav class=" container-lg navbar navbar-expand-lg navbar-light  ">
+        <nav class=" container-lg navbar navbar-expand-lg navbar-dark  ">
             <div class="container-fluid">
                 <a class="navbar-brand w-25" href="#"><img class="w-75" src="icons/Logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 fw-bold mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 fw-bold mb-lg-0 align-items-center fw-normal">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#shoe">Product</a>
+                            <a class="nav-link" href="#feture">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#shoe2">About us</a>
+                            <a class="nav-link" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">Clients</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact us</a>
                         </li>
-
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><button class="text-white px-3 py-1">Login</button></a>
+                        </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
+        <!----------------------
+             home-contant
+            ----------------- -->
         <div class="container-lg">
 
             <div class=" home-contant d-flex justify-content-between align-items-center py-5">
 
-                <div class=" left-site  md-w-50 ">
-                    <img class="w-75" src="images/heroshoe.png " alt=" ">
 
+                <div class="right-site  ">
+                    <p>Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="text-white fw-bolder fs-1 ">Honda CBR 300R</h1>
+                    <P class="py-1 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</P>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary px-4 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Buy Now
+  </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    The CBR300R takes what the CBR250R offers and turns it up a notch. 286cc from a single-cylinder liquid-cooled motor generates 30bhp and 27Nm, a healthy increase ...
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="right-site md-w-100 ">
-                    <h1 class=" "><span>NIKE REACT</span> <br><span> INFINITY RUN 2</span></h1>
-                    <P class="py-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. BR Dolorum, in adipisicing elit. Dolorum, in.</P>
-                    <button class="flex items-center text-white px-2 py-2 ">
-                    <img class="w-25 pr-1 " src="icons/shopping-cart 1.png " alt=" ">
-                    Buy Now
-                </button>
+                <div class=" left-site ">
+                    <img src="images/header-bike.png " alt=" ">
+
                 </div>
             </div>
         </div>
     </header>
+    <!----------------------
+     feture section 
+    ---------------------- -->
+    <main>
+        <section id="feture " class="feture ">
+            <div class="container-md ">
+                <div class="heading text-center ">
+
+                    <h1 class=" ">Fetured Bikes 2021</h1>
+                    <small>Best bike collection</small>
+
+                </div>
+                <div class="fetureBike-wapper d-flex justify-content-between align-items-center text-center ">
+                    <div class="col mt-4 ">
+                        <img src="images/feturebike-2.png " alt=" ">
+                    </div>
+                    <div class="col mt-4 ">
+                        <img src="images/feturebike-2.png " alt=" ">
+                    </div>
+                    <div class="col mt-4 ">
+                        <img src="images/feturebike-2.png " alt=" ">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!----------------------
+     latest news section 
+    ---------------------- -->
+
+        <section id="news " class=" news container my-5 ">
+            <div class="hedding text-center my-5">
+                <h1>Latest <span>News</span></h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+                <div class="col ">
+                    <div class=" box-shadow card h-100 border-0 py-3 ">
+                        <img src="images/bike-2.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-3 fw-bold ">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text ">Specifications. Mated to a six-speed transmission, the Honda CBR300R is powered by a 286cc, single-cylinder, liquid-cooled engine, producing 31PS .</p>
+
+
+                            <button class=" text-white px-2 py-2 ">
+                                   
+                                    Buy Now
+                                </button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class=" box-shadow card h-100 border-0 py-3 ">
+                        <img src="images/bike-1.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-3 fw-bold ">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text ">Specifications. Mated to a six-speed transmission, the Honda CBR300R is powered by a 286cc, single-cylinder, liquid-cooled engine, producing 31PS . </p>
+
+
+                            <button class=" text-white px-2 py-2 ">
+                                   
+                                    Buy Now
+                                </button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class=" box-shadow card h-100 border-0 py-3 ">
+                        <img src="images/bike-2.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fs-3 fw-bold ">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text ">Specifications. Mated to a six-speed transmission, the Honda CBR300R is powered by a 286cc, single-cylinder, liquid-cooled engine, producing 31PS .</p>
+
+
+                            <button class=" text-white px-2 py-2 ">
+                                   
+                                    Buy Now
+                                </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <!----------------------
+     Client syas section 
+    ---------------------- -->
+
+        <section class=" container client " id="client ">
+            <div class="heading text-center py-5 ">
+                <h1>Happy <span>Clients says</span></h1>
+            </div>
+            <div class="container ">
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+                    <div class="col ">
+                        <div class="card h-100 p-4 ">
+                            <img class="w-50 mx-auto " src="images/user-1.png " class="card-img-top " alt="... ">
+                            <div class="card-body text-center ">
+                                <p class="card-text ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year..</p>
+                                <div class="staricon d-flex justify-content-center ">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                                <small class="py-2 d-block fw-normal ">Regina Miles</small>
+                                <p>Banker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100 p-4 ">
+                            <img class="w-50 mx-auto " src="images/user-2.png " class="card-img-top " alt="... ">
+                            <div class="card-body text-center ">
+                                <p class="card-text ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year..</p>
+                                <div class="staricon d-flex justify-content-center ">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                                <small class="py-2 d-block fw-normal ">Regina Miles</small>
+                                <p>Banker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100 p-4 ">
+                            <img class="w-50 mx-auto " src="images/user-3.png " class="card-img-top " alt="... ">
+                            <div class="card-body text-center ">
+                                <p class="card-text ">Slate helps you see how many more days you need to work to reach your financial goal for the month and year..</p>
+                                <div class="staricon d-flex justify-content-center ">
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="fas fa-star "></i>
+                                    <i class="far fa-star "></i>
+                                </div>
+                                <small class="py-2 d-block fw-normal ">Regina Miles</small>
+                                <p>Banker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!----------------------
+     product section 
+    ---------------------- -->
+    <section class="client py-5" id="client ">
+        <div class="container">
+            <div class="heading text-center py-5 ">
+                <h1>Frequently Asked<span> Questions</span></h1>
+            </div>
+
+
+            <div class=" question-wapper d-flex justify-content-between align-items-start">
+                <div class="left-site">
+                    <img src="images/faq.png" alt="">
+                </div>
+                <div class="rightsite">
+
+                    <div id="accordion">
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <div class="wapper d-flex justify-content-between align-items-center">
+                                        <div class="text fs-6">What are the most important things I should know about riding a bike?</div>
+
+                                        <div class="icon">
+                                            <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    A saddle that you love. If you aren't comfortable on your bike, you're not going to be motivated to spend time there. Sure, a good overall fit is important, too, but assuming you have your bike geometry in the right ballpark, a great saddle is The Important
+                                    Thing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <div class="wapper d-flex justify-content-between align-items-center">
+                                        <div class="text fs-6">What are the most important things I should know about riding a bike?</div>
+
+                                        <div class="icon">
+                                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    A saddle that you love. If you aren't comfortable on your bike, you're not going to be motivated to spend time there. Sure, a good overall fit is important, too, but assuming you have your bike geometry in the right ballpark, a great saddle is The Important
+                                    Thing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <div class="wapper d-flex justify-content-between align-items-center">
+                                        <div class="text fs-6">What are the most important things I should know about riding a bike?</div>
+
+                                        <div class="icon">
+                                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    A saddle that you love. If you aren't comfortable on your bike, you're not going to be motivated to spend time there. Sure, a good overall fit is important, too, but assuming you have your bike geometry in the right ballpark, a great saddle is The Important
+                                    Thing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------
+   new bike collection section start from here 
+    ------------------------------------>
+    <section id="newbike" class="newbike ">
+        <div class="container">
+            <div class="heading text-center py-5">
+                <h1>Our New <span>Bike Collection</span></h1>
+            </div>
+            <div class="wapper d-flex justify-content-between align-items-center">
+                <div class="left mx-1">
+                    <img src="images/new bike.jpg" alt="">
+                    <div class="title">
+                        <h3>GB Motobike</h3>
+                        <small>To be honest, most of them haven’t even turned into reality, but that is not for sure a designer’s bad</small>
+                    </div>
+                </div>
+                <div class="right mx-2">
+
+                    <img src="images/new bike2.jpg" alt="">
+                    <div class="title2">
+                        <h3>BMW R NINET</h3>
+                        <small>To be honest, most of them haven’t even turned into reality, but that is not for sure a designer’s bad</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------
+   testimonials section start from here 
+    ------------------------------------>
+    <section class="container" id="testimonials">
+        <div class="testimonials my-5  d-flex justify-content-between align-items-center ">
+            <div class="left-site px-1">
+                <h1>What people say about Us.</h1>
+            </div>
+            <div class="right-site mb-5  ">
+                <div class="imag "><img src="images/men.png" alt=""></div>
+                <div class="text  p-3">
+                    <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+                    <h5>Mike taylor</h5>
+                    <p><small>Lahore, Pakistan</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!----------------------
+     fotter section 
+    ---------------------- -->
+    <section class=" foter  fs-6">
+        <div class=" container">
+            <div class="wapper d-flex justify-content-between align-items-center">
+                <div class="left">
+                    <div class="first d-flex align-items-center">
+                        <p class="pe-4">Download Now</p>
+                        <p>License</p>
+                    </div>
+                    <div class="second d-flex  ">
+                        <p><a href="#">home</a></p>
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Features</a></p>
+                        <p><a href="#">Pricing</a></p>
+                        <p><a href="#">Careers</a></p>
+                        <p><a href="#">Help</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="right">
+                    <p>Get the app</p>
+                    <img class="mb-3" src="images/googleplay.png" alt="">
+                    <br>
+                    <img class="mb-2" src="images/applestore.png" alt="">
+                </div>
+
+            </div>
+            <div class="therd my-3 ">
+                <p>&#169 2021 bike. All rights reserved</p>
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- fontwasome  -->
+    <script src="https://kit.fontawesome.com/3d0b2bcb52.js " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
