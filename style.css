@@ -316,7 +316,7 @@ new bike collection --------------
  */
 
 .newbike img {
-    max-width: 400px;
+    width: 310px;
     min-width: 150px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -332,7 +332,6 @@ new bike collection --------------
 .newbike .wapper .left img,
 .newbike .wapper .right img {
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .newbike .wapper .left {
@@ -373,6 +372,10 @@ new bike collection --------------
     }
     .newbike .wapper img {
         margin-bottom: 10px;
+    }
+    .newbike .wapper .left img,
+    .newbike .wapper .right img {
+        width: 90%;
     }
 }
 
