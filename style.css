@@ -11,6 +11,7 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
     /* color  */
+    --bgcolor: #264653;
     --pureColor: #fff;
     --premaryColor: #E76F51;
     --secondaryLightColor: #7E848C;
@@ -68,7 +69,7 @@ nav ul li {
 }
 
 header {
-    background-color: var(--secondaryLightColor);
+    background-color: var(--bgcolor);
 }
 
 header .left-site {
